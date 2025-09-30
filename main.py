@@ -30,6 +30,12 @@ def subtract_numbers(num1: int, num2: int) -> int:
     """
     return num1 - num2
 
+def multiply_numbers(num1: int, num2: int) -> int:
+    """
+        Повертає добуток дох чисел
+    """
+    return num1 * num2
+
 
 def run_project():
     """
@@ -44,6 +50,11 @@ def run_project():
     # Перевірка функції віднімання (нова функціональність)
     subtraction_result = subtract_numbers(10, 5)
     print(f"Результат віднімання 10 - 5: {subtraction_result}")
+
+    # Перевірка функції множення
+    multiply_result = multiply_numbers(5, 6)
+    print(f"Результат множення 5 * 6: {multiply_result}")
+
 
     print("--- Калькулятор завершив роботу ---")
 
