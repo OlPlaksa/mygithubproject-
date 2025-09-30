@@ -36,6 +36,12 @@ def multiply_numbers(num1: int, num2: int) -> int:
     """
     return num1 * num2
 
+def divide_numbers(num1: int, num2: int) -> float:
+    try:
+        return num1 / num2
+    except ZeroDivisionError:
+        return float('inf')
+
 
 def run_project():
     """
@@ -55,6 +61,11 @@ def run_project():
     multiply_result = multiply_numbers(5, 6)
     print(f"Результат множення 5 * 6: {multiply_result}")
 
+    # Перевірка функції ділення з обробкою винятків
+    devivision_result = divide_numbers(40, 4)
+    devivision_error = divide_numbers(40, 0)
+    print(f"Результат ділення 40 / 4: {devivision_result}")
+    print(f"Результат ділення 40 / 0: {devivision_error}")
 
     print("--- Калькулятор завершив роботу ---")
 
